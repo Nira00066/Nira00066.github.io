@@ -1,0 +1,413 @@
+/* Importation de la police Poppins depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Réinitialisation des marges et des espacements pour tous les éléments */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style du corps du document */
+body {
+  font-family: "Poppins", sans-serif; /* Utilisation de la police Poppins */
+}
+
+/* Comportement de défilement doux pour les ancres */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style par défaut pour les paragraphes */
+p {
+  color: rgb(85, 85, 85); /* Couleur du texte des paragraphes */
+}
+
+/* Transition appliquée aux liens et aux boutons */
+a,
+.btn {
+  transition: all 300ms ease; /* Transition fluide pour les changements d'état */
+}
+
+/* Styles pour la navigation de bureau (Desktop NAV) */
+nav,
+.nav-links {
+  display: flex; /* Utilisation de Flexbox pour l'agencement des éléments */
+}
+
+nav {
+  justify-content: space-around; /* Espacement égal entre les éléments */
+  align-items: center; /* Alignement vertical au centre */
+  height: 17vh; /* Hauteur de la barre de navigation */
+}
+
+.nav-links {
+  gap: 2rem; /* Espacement entre les liens de navigation */
+  list-style: none; /* Suppression des puces des listes */
+  font-size: 1.5rem; /* Taille de la police des liens */
+}
+
+a {
+  color: black; /* Couleur des liens */
+  text-decoration: none; /* Suppression de la décoration de texte par défaut */
+}
+
+a:hover {
+  color: gray; /* Couleur des liens au survol */
+  text-decoration: underline;
+  text-underline-offset: 1rem; /* Décalage de la ligne de soulignement */
+  text-decoration-color: rgb(181, 181, 181); /* Couleur de la ligne de soulignement */
+}
+
+.logo {
+  font-size: 2rem; /* Taille de la police du logo */
+}
+
+.logo:hover {
+  cursor: default; /* Curseur par défaut au survol du logo */
+}
+
+/* Styles pour le menu hamburger (pour les écrans plus petits) */
+#hamburger-nav {
+  display: none; /* Masquer le menu hamburger par défaut */
+}
+
+.hamburger-nav {
+  position: relative; /* Positionnement relatif pour le menu hamburger */
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex; /* Utilisation de Flexbox pour les icônes du hamburger */
+  flex-direction: column; /* Disposition en colonne */
+  justify-content: space-between; /* Espacement égal entre les lignes */
+  height: 24px;
+  width: 30px;
+  cursor: pointer; /* Curseur pointeur au survol */
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease-in-out; /* Transition fluide pour les changements d'état */
+}
+
+.menu-links {
+  position: absolute; /* Positionnement absolu pour le menu déroulant */
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0; /* Hauteur maximale initiale à 0 pour l'animation */
+  overflow: hidden;
+  transition: all 0.3s ease-in-out; /* Transition fluide pour l'ouverture/fermeture */
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; /* Transition fluide pour les liens */
+}
+
+.menu-links li {
+  list-style: none; /* Suppression des puces des listes */
+}
+
+.menu-links.open {
+  max-height: 300px; /* Hauteur maximale lorsque le menu est ouvert */
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px); /* Transformation du premier span */
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0; /* Opacité du deuxième span à 0 */
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px); /* Transformation du dernier span */
+}
+
+.hamburger-icon span:first-child {
+  transform: none; /* Réinitialisation de la transformation */
+}
+
+.hamburger-icon span:nth-child(2) {
+  opacity: 1; /* Opacité du deuxième span à 1 */
+}
+
+.hamburger-icon span:last-child {
+  transform: none; /* Réinitialisation de la transformation */
+}
+
+/* Styles pour les sections */
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex; /* Utilisation de Flexbox pour les conteneurs de section */
+}
+
+/* Styles pour la section profil */
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem; /* Espacement entre les éléments */
+  height: 80vh;
+}
+
+.section_pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section_text {
+  align-self: center; /* Alignement au centre verticalement */
+  text-align: center; /* Alignement du texte au centre */
+}
+
+.section_text p {
+  font-weight: 600; /* Poids de la police pour les paragraphes */
+}
+
+.section_text_p1 {
+  justify-content: center;
+  display: flex;
+  font-size: 1.75rem; /* Taille de la police pour le texte principal */
+  margin-bottom: 1rem; /* Marge inférieure */
+}
+
+.title {
+  font-size: 3rem; /* Taille de la police pour les titres */
+  text-align: center; /* Alignement du texte au centre */
+}
+
+#socials-container {
+  display: flex; /* Utilisation de Flexbox pour le conteneur de réseaux sociaux */
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem; /* Espacement entre les icônes */
+}
+
+/* Styles pour les icônes */
+.icon {
+  cursor: pointer; /* Curseur pointeur au survol */
+  height: 2rem;
+}
+
+/* Styles pour les boutons */
+.btn-container {
+  display: flex; /* Utilisation de Flexbox pour le conteneur de boutons */
+  justify-content: center;
+  gap: 1rem; /* Espacement entre les boutons */
+}
+
+.btn {
+  font-weight: 600; /* Poids de la police pour les boutons */
+  transition: all 300ms ease; /* Transition fluide pour les boutons */
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem; /* Bords arrondis */
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) solid 0.1rem; /* Bordure des boutons */
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer; /* Curseur pointeur au survol */
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53); /* Couleur de fond au survol */
+  color: white; /* Couleur du texte au survol */
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0); /* Couleur de fond pour le bouton 1 au survol */
+}
+
+.btn-color-2 {
+  background: none; /* Pas de couleur de fond pour le bouton 2 */
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid; /* Bordure blanche au survol pour le bouton 2 */
+}
+
+/* Styles pour la section à propos */
+#about {
+  position: relative; /* Positionnement relatif pour la section à propos */
+}
+
+.about-containers {
+  gap: 2rem; /* Espacement entre les conteneurs */
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column; /* Direction en colonne pour les détails */
+}
+
+.about-containers,
+.about-details-container {
+  display: flex; /* Utilisation de Flexbox pour les conteneurs */
+}
+
+.about-pic {
+  border-radius: 2rem; /* Bords arrondis pour l'image */
+}
+
+.arrow {
+  position: absolute; /* Positionnement absolu pour la flèche */
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  background: white;
+  flex: 1;
+  border-radius: 2rem; /* Bords arrondis */
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center; /* Alignement du texte au centre */
+}
+
+.section-container {
+  gap: 4rem; /* Espacement entre les conteneurs de section */
+  height: 80%;
+}
+
+.section_pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* Styles pour la section expérience */
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85); /* Couleur du sous-titre */
+  font-weight: 600; /* Poids de la police */
+  font-size: 1.75rem; /* Taille de la police */
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Direction en colonne pour les détails */
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+  flex-direction: row; /* Direction en ligne pour les articles */
+  gap: 2.5rem; /* Espacement entre les articles */
+  justify-content: space-around; /* Espacement égal entre les articles */
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem; /* Espacement entre les éléments de l'article */
+}
+
+article .icon {
+  cursor: default; /* Curseur par défaut pour les icônes */
+}
+
+/* Styles pour la section projets */
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem; /* Bords arrondis pour les images de projet */
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* Styles pour la section contact */
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem; /* Bords arrondis pour le conteneur de contact */
+  border: rgb(163, 163, 163) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Espacement entre les éléments de contact */
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center; /* Alignement centré du texte du pied de page */
+}

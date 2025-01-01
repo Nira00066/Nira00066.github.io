@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nina Lopez</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nina Lopez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div>
+          <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section_pic-container">
+        <img src="./assets/profile-pic.png" alt="Nina Profile" />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello I'm</p>
+        <h1 class="title">Nina Lopez</h1>
+        <p class="section_text_p2">Student developer web</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-1-2024.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My linkedin profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nina-lopez-555218214/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get to Know More</p>
+      <p class="title">About Me</p>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="profile-pic"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                Mise à jour du site web pour Local972 <br />
+                Non-code<br />
+                oct-2024/Aujord'hui
+              </p>
+              <br />
+              <p>
+                Photographe Produits<br />
+                sep-2022/dec-2022
+              </p>
+              <br />
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <br />
+              <p>Un Bootcamp en développement web.<br />2023</p>
+              <br />
+              <p>Une formation Agile validée.<br />2023</p>
+              <br />
+              <p>Un Bac Pro Métiers de la Mode. <br />br2021</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Polyvalente et motivée, je suis en transition professionnelle vers
+              le développement web, un domaine qui allie créativité et
+              technicité. Forte de mes expériences variées en vente, logistique,
+              et artisanat, j’ai développé des compétences en précision,
+              organisation, et gestion de projets. Passionnée par la création
+              numérique, je souhaite désormais mettre à profit ces atouts pour
+              concevoir des solutions web innovantes et user-friendly tout en
+              continuant à me perfectionner dans ce secteur dynamique
+            </p>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="arrow icon"
+          class="icon arrow"
+          onclick="location.href='#experience'"
+        />
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flutter</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Logiciels</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Visual Studio</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PhotoShop</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Illustrator</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Canva</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Trello</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unity</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Procreat</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostSql</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+             
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Débutante</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="arrow icon"
+          class="icon arrow"
+          onclick="location.href='#projects'"
+        />
+      </div>
+    </section>
+    <br/>
+    <section id="projects">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="project-1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="project-2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="project-3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="arrow icon"
+          class="icon arrow"
+          onclick="location.href='#projects'"
+        />
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="/assets/email.png"
+            alt="email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:lopeznina2@orange.fr">lopeznina2@orange.fr</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="/assets/linkedin.png"
+            alt="linkedin icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com">linkedin</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Nina Lopez. All Rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
