@@ -6,6 +6,10 @@
   margin: 0;
   padding: 0;
 }
+#profile, #about, #experience, #projects, #contact {
+  height: 100vh; /* Utiliser une hauteur fixe pour chaque section */
+}
+
 
 /* Style du corps du document */
 body {
@@ -274,6 +278,9 @@ section {
   border-radius: 2rem; /* Bords arrondis pour l'image */
 }
 
+.text-container {
+  text-align: center; /* Alignement du texte au centre */
+}
 .arrow {
   position: absolute; /* Positionnement absolu pour la flèche */
   right: -5rem;
