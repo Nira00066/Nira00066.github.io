@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-1-nina",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
