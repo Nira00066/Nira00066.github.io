@@ -22,11 +22,7 @@
     <nav id="hamburger-nav">
       <div class="logo">Nina Lopez</div>
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <div class="hamburger-icon" onclick="toggleMenu()"></div>
         <div>
           <ul class="menu-links">
             <li><a href="#about" onclick="toggleMenu()">Qui suis-je ?</a></li>
@@ -45,9 +41,9 @@
         <p class="section_text_p1">Bonjour , Je m'appelle</p>
         <h1 class="title">Nina Lopez</h1>
         <p class="section_text_p2">
-          étudiente en développement web et web mobile.
+          étudiante en développement web et web mobile.
         </p>
-        <br />
+
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -57,7 +53,7 @@
           </button>
 
           <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
+            Mes contacts
           </button>
         </div>
         <br />
@@ -78,7 +74,7 @@
       </div>
     </section>
     <section id="about">
-      <p class="section_text_p1">Apprendre à me connaître</p>
+      <p class="section_text_p1">En savoir plus sur</p>
       <p class="title">Qui suis-je ?</p>
       <div class="section-container">
         <div class="section_pic-container">
@@ -87,58 +83,61 @@
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Expérience professionnelle</h3>
+              <div class="title-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Expérience professionnelle</h3>
+              </div>
               <p>
-                Mise à jour du site web pour Local972 <br />
-                Non-code<br />
-                oct-2024/Aujord'hui
+                <b> Non-code oct-2024/Aujord'hui </b>
               </p>
-              <br />
+              <p class="details-1">Mise à jour du site web pour Local972</p>
+
               <p>
-                Photographe Produits<br />
-                sep-2022/dec-2022
+                <b> sep-2022/dec-2022</b>
               </p>
-              <br />
+              <p class="details-1">Photographe Produits</p>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="education icon"
-                class="icon"
-              />
-              <h3>Formation académique</h3>
-              <br />
-              <p>Un Bootcamp en développement web.<br />2023</p>
-              <br />
-              <p>Une formation Agile validée.<br />2023</p>
-              <br />
-              <p>Un Bac Pro Métiers de la Mode. <br />2021</p>
+              <div class="title-container">
+                <img
+                  src="./assets/education.png"
+                  alt="education icon"
+                  class="icon"
+                />
+                <h3>Formation académique</h3>
+              </div>
+              <p><b>2024</b></p>
+              <p class="details-1">Un Bootcamp en développement web.</p>
+
+              <p><b> 2024</b></p>
+              <p class="details-1">Une formation Agile validé</p>
+              <p><b>2021 </b></p>
+              <p class="details-1">Un Bac Pro Métiers de la Mode.</p>
+            </div>
+            <div class="text-container">
+              <p>
+                Actuellement en transition vers le développement web, je combine
+                ma passion pour la créativité numérique et mon goût pour la
+                technicité. Forte de parcours diversifiés en vente, logistique
+                et artisanat, j'ai acquis des compétences solides en gestion de
+                projet, organisation et précision. Motivée et polyvalente, je
+                souhaite désormais mettre à profit ces atouts pour concevoir des
+                solutions web innovantes et intuitives, tout en continuant à
+                évoluer dans ce secteur en constante transformation.
+              </p>
             </div>
           </div>
-          <div class="text-container">
-            <p>
-              Actuellement en transition vers le développement web, je combine
-              ma passion pour la créativité numérique et mon goût pour la
-              technicité. Forte de parcours diversifiés en vente, logistique et
-              artisanat, j'ai acquis des compétences solides en gestion de
-              projet, organisation et précision. Motivée et polyvalente, je
-              souhaite désormais mettre à profit ces atouts pour concevoir des
-              solutions web innovantes et intuitives, tout en continuant à
-              évoluer dans ce secteur en constante transformation.
-            </p>
-          </div>
+          <img
+            src="./assets/arrow.png"
+            alt="arrow icon"
+            class="icon arrow"
+            onclick="location.href='#experience'"
+          />
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="arrow icon"
-          class="icon arrow"
-          onclick="location.href='#experience'"
-        />
       </div>
     </section>
 
@@ -148,9 +147,7 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">développement frontend
-
-            </h2>
+            <h2 class="experience-sub-title">développement frontend</h2>
             <div class="article-container">
               <article>
                 <img
@@ -303,9 +300,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">développement backend
-              
-            </h2>
+            <h2 class="experience-sub-title">développement backend</h2>
             <div class="article-container">
               <article>
                 <img
@@ -363,7 +358,7 @@
         />
       </div>
     </section>
-    <br />
+
     <section id="projects">
       <p class="section_text_p1">Parcourir mes récents</p>
       <h1 class="title">Projets</h1>
@@ -452,9 +447,10 @@
         />
       </div>
     </section>
+
     <section id="contact">
       <p class="section_text_p1">Contactez-moi</p>
-   
+
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -474,6 +470,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -490,5 +487,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-

@@ -17,8 +17,14 @@
   }
   #experience,
   .experience-details-container {
+    flex-direction: column;
+    align-items: center;
     margin-top: 2rem;
   }
+  .details-1 > p {
+    padding-bottom: 1rem;
+  }
+
   #profile,
   .section-container {
     display: block;
@@ -57,6 +63,7 @@
   footer {
     height: fit-content;
     margin-bottom: 2rem;
+    padding-top: 2rem;
   }
   .about-containers,
   .contact-info-upper-container,
@@ -75,10 +82,14 @@
   .logo {
     font-size: 1.5rem;
   }
+  .details-1  {
+    padding-bottom: 1rem;
+  }
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+    padding-bottom: 4rem;
   }
   .section_pic-container {
     width: auto;

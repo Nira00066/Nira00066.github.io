@@ -183,6 +183,7 @@ section {
 
 .section_text p {
   font-weight: 600; /* Poids de la police pour les paragraphes */
+  margin-bottom: 2rem;
 }
 
 .section_text_p1 {
@@ -268,9 +269,17 @@ section {
   justify-content: center;
   flex-direction: column; /* Direction en colonne pour les détails */
 }
+.title-container {
+  margin-bottom: 1rem; /* Marge supérieure pour le texte */}
+.title-container > span  {
+  gap: 1rem; /* Espacement entre les éléments */
+  display: flex; /* Utilisation de Flexbox pour le conteneur de titre */
+  flex-direction: column;
+}
 
 .about-containers,
 .about-details-container {
+  padding-top: 2rem;
   display: flex; /* Utilisation de Flexbox pour les conteneurs */
 }
 
@@ -293,7 +302,7 @@ section {
   flex: 1;
   border-radius: 2rem; /* Bords arrondis */
   border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border-color: rgb(163, 163, 163);;
   text-align: center; /* Alignement du texte au centre */
 }
 
