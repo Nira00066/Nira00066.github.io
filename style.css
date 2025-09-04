@@ -289,6 +289,7 @@ section {
 
 .text-container {
   text-align: center; /* Alignement du texte au centre */
+  margin: auto 3rem;
 }
 .arrow {
   position: absolute; /* Positionnement absolu pour la flèche */
@@ -358,6 +359,7 @@ article .icon {
 /* Styles pour la section projets */
 #projects {
   position: relative;
+  margin: 0 5rem;
 }
 
 .color-container {
