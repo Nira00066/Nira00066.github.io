@@ -262,6 +262,7 @@ section {
 .about-containers {
   gap: 2rem; /* Espacement entre les conteneurs */
   margin-bottom: 2rem;
+  flex-wrap: wrap;
   margin-top: 2rem;
 }
 
